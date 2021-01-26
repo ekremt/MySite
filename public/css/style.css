@@ -1,0 +1,213 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Ubuntu",sans-serif;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    background: url('../img/bg4.jpg');
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.flag{
+    position: fixed;
+    top:3px;
+    left:3px;
+    width:35px;
+    height: 35px;
+    
+}
+.flag img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 50%;
+}
+.profile-card{
+    width: 350px;
+    text-align: center;
+    border-radius: 8px;
+    overflow:hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.card-header{
+    background:yellow;
+    padding:40px 40px;
+}
+.pic{
+    display:inline-block;
+    padding: 8px;
+    background: linear-gradient(130deg,yellow,black);
+    margin: auto;
+    border-radius: 50%;
+    animation: animated-gradient 4s linear infinite;
+    background-size: 200% 200%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+ @keyframes animated-gradient
+ {
+     25%{
+         background-position: left bottom;
+     }
+     50%
+     {
+         background-position: right bottom;
+     }
+     75%
+     {
+         background-position: right top;
+     }
+     100%
+     { 
+         background-position: left top;
+     }
+ } 
+.pic img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.name{
+    color:black;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0
+}
+.desc{
+    font-size:18px;
+    color:black;
+}
+.sm{
+    display:flex;
+    justify-content: center;
+    margin:20px 0;
+}
+.sm a{
+    color:black;
+    margin-left: 3px;
+    width:40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    font-size: 22px;
+    transition: .3s linear;
+    border-radius: 50%;
+}
+.sm a:hover{
+    color:#f2f2f2;
+    background:black;
+}
+.contact-btn{
+    display:inline-block;
+    padding:12px 50px;
+    color:black;
+    border:2px solid black;
+    border-radius: 6px;
+    margin-top:5px;
+    transition: .3s linear;
+    background:yellow;
+}
+.contact-btn:hover{
+    background:black;
+    color:#f2f2f2;
+    border:2px solid black;
+}
+.card-footer{
+    background:black;
+    padding:60px 10px;
+}
+.numbers{
+    display:flex;
+    align-items:center;
+}
+.item{
+    flex:1;
+    text-transform: uppercase;
+    font-size: 13px;
+    color:#f2f2f2;
+
+}
+.item span {
+    display:block;
+    color:yellow   ;
+    font-size: 30px;
+}
+.border{
+    width: 1px;
+    height: 30px;
+    background: #bbb;
+}
+/*Contact*/
+
+
+.contact-box input[type="text"], .contact-box textarea {
+    border: 0;
+    display: block;
+    background: none;
+   margin: 10px auto;
+   text-align: center;
+   padding: 14px 10px;
+   outline: none;
+   border: 2px solid ;  
+    border-color: yellow; 
+    border-radius: 50px;
+    width: 200px ;
+    color:white;
+    transition: 0.25s;
+}
+.contact-box input[type="text"]:focus , .contact-box textarea:focus{
+    width: 270px;
+    border-color: white;
+}
+.contact-box input[type="submit"] {
+    border: 0;
+    display: block;
+    background: none;
+   margin: 20px auto;
+   text-align: center;
+   padding: 14px 40px;
+   outline: none;
+   border: 2px solid ;  
+    border-color: white; 
+    border-radius: 50px;
+    color:white;
+    transition: 0.25s;
+    
+}
+.contact-box input[type="submit"]:hover {
+    background:yellow ;
+    border-color: yellow; 
+    color:black;
+   
+}
+.contactMessage{
+
+}
+
+/*Notification*/
+
+.notification{
+    position: fixed;
+    width: 250px;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    background: yellow;
+    color: black;
+    line-height: 1;
+    transition: .5s;
+
+}
+.notification i{
+    position: absolute;
+    right:5px;
+
+}

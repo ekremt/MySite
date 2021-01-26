@@ -1,0 +1,25 @@
+<a href="/"> <div class="card-header">
+  
+    <div class="name">Ekrem Tınas</div>
+   
+</div></a>
+<div class="card-footer">
+
+    <form class="contact-box" action="" id="contact-form" method="post">
+     
+        <div class="txt-box">
+        <input class="contactName" type="text"  name="name" autocomplete="none" id="name" placeholder="Name">
+        </div>
+        <div class="txt-box">
+         <input class="contactEmail" type="text" name="email" autocomplete="email" id="email" placeholder="E Mail">
+        </div>
+        <div class="txt-box">
+            <input class="contactSubject" type="text" name="subject" autocomplete="none" id="subject" placeholder="Subject">
+           </div>
+           <div class="txt-box">
+            <textarea  class="contactMessage" type="text" name="message" autocomplete="none" id="message" placeholder="Message"></textarea>
+           </div>
+        <input class="submit" type="submit" value="Send Message">
+    </form>
+</div>
+<%- include("./notification"); -%> 
